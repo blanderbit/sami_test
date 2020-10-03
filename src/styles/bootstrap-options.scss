@@ -1,0 +1,25 @@
+// Variables Bootstrap 4
+$grid-columns: 12;
+$grid-gutter-width: 24px;
+
+$mediaWidthXS: 0;
+$mediaWidthSM: 576px;
+$mediaWidthMD: 768px;
+$mediaWidthLG: 1024px;
+$mediaWidthXL: 1252px;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1252px
+);
+
+$container-max-widths: (
+    xs: 100%,
+    sm: 576px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1252px,
+);

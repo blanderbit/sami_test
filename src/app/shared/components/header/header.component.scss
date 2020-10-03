@@ -1,0 +1,88 @@
+
+*, body {
+    font-family: Gilroy;
+    font-style: normal;
+    color: #0E0E0E;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    height: 69px;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 48px;
+    width: 100%;
+}
+
+.logo, .pages, .btn-group {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+}
+
+.logo div {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.pages {
+    div {
+        margin: 0 16px;
+        padding-bottom: 12px;
+        color: #BEBEBE;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        cursor: pointer;
+    }
+
+    div:hover {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #0E0E0E;
+
+        border-bottom: 2px solid #E8551E;
+    }
+}
+
+.btn-group {
+    mat-icon {
+        width: 24px;
+        height: 24px;
+        margin: 0 16px;
+        cursor: pointer;
+    }
+
+    .sign-in {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        border: none;
+        padding: 0;
+        margin: 0 16px 0 0;
+    }
+
+    .sign-up {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: #E8551E;
+        border: none;
+        border-radius: 5px;
+        margin: 0 0 0 16px;
+        width: 164px;
+        height: 69px;
+    }
+}

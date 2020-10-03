@@ -1,0 +1,79 @@
+@import '../../node_modules/@angular/material/theming';
+@import 'variables';
+
+@include mat-core();
+$mat-primary: (
+    50: var(--theme-color-primary-0),
+    100: var(--theme-color-primary-1),
+    200: var(--theme-color-primary-2),
+    300: var(--theme-color-primary-3),
+    400: var(--theme-color-primary-4),
+    500: var(--theme-color-primary-5),
+    600: var(--theme-color-primary-6),
+    700: var(--theme-color-primary-7),
+    800: var(--theme-color-primary-8),
+    900: var(--theme-color-primary-9),
+    A100: var(--theme-color-primary-10),
+    A200: var(--theme-color-primary-11),
+    A400: var(--theme-color-primary-12),
+    A700: var(--theme-color-primary-13),
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $light-primary-text,
+        A200: $light-primary-text,
+        A400: $light-primary-text,
+        A700: $light-primary-text,
+    )
+);
+
+$mat-accent: (
+    50: var(--theme-color-accent-0),
+    100: var(--theme-color-accent-1),
+    200: var(--theme-color-accent-2),
+    300: var(--theme-color-accent-3),
+    400: var(--theme-color-accent-4),
+    500: var(--theme-color-accent-5),
+    600: var(--theme-color-accent-6),
+    700: var(--theme-color-accent-7),
+    800: var(--theme-color-accent-8),
+    900: var(--theme-color-accent-9),
+    A100: var(--theme-color-accent-10),
+    A200: var(--theme-color-accent-11),
+    A400: var(--theme-color-accent-12),
+    A700: var(--theme-color-accent-13),
+    contrast: (
+        50: $dark-secondary-text,
+        100: $dark-secondary-text,
+        200: $dark-secondary-text,
+        300: $dark-secondary-text,
+        400: $dark-secondary-text,
+        500: $light-secondary-text,
+        600: $light-secondary-text,
+        700: $light-secondary-text,
+        800: $light-secondary-text,
+        900: $light-secondary-text,
+        A100: $light-secondary-text,
+        A200: $light-secondary-text,
+        A400: $light-secondary-text,
+        A700: $light-secondary-text,
+    )
+);
+$Test-theme-primary: mat-palette($mat-primary);
+$Test-theme-accent: mat-palette($mat-accent);
+$Test-theme: mat-light-theme($Test-theme-primary, $Test-theme-accent);
+$custom-typography: mat-typography-config(
+    $font-family: 'Gilroy',
+    $body-1: mat-typography-level(18px, 25px, 400)
+);
+@include mat-base-typography($custom-typography);
+
+@include angular-material-theme($Test-theme);

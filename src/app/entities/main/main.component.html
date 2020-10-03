@@ -1,0 +1,54 @@
+<app-header></app-header>
+<div class="search-section">
+    <div class="title">
+        Marketplace for buyers and sellers who love cars
+    </div>
+    <div class="main-title">
+        Find your next car here
+    </div>
+    <div class="search-title">Advanced search</div>
+    <div class="search-section-container">
+        <div class="country">
+            <mat-icon
+                class="search-block-icon"
+                svgIcon="bx-location">
+            </mat-icon>
+            <mat-select placeholder="City">
+                <mat-option *ngFor="let city of cities" [value]="city">
+                    {{city}}
+                </mat-option>
+            </mat-select>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="brand-model">
+            <mat-icon
+                class="search-block-icon"
+                svgIcon="bx-car">
+            </mat-icon>
+            <mat-select placeholder="Brand and model">
+                <mat-option *ngFor="let brand of brands" [value]="brand">
+                    {{brand}}
+                </mat-option>
+            </mat-select>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="max-price">
+            <mat-icon
+                class="search-block-icon"
+                svgIcon="bx-wallet">
+            </mat-icon>
+            <input matInput placeholder="Max price" type="number">
+        </div>
+        <button class="search-btn">
+            <mat-icon svgIcon="bx-search"></mat-icon>
+            Search
+        </button>
+    </div>
+    <div class="slider-container">
+        <div class="slider-container__title">Market status</div>
+        <app-carousel
+            [slides]="slides"
+            [animationType]="animationType"
+        ></app-carousel>
+    </div>
+</div>
